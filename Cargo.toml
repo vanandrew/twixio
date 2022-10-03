@@ -9,3 +9,5 @@ license = "MIT"
 
 [dependencies]
 nom = "7"
+anyhow = "1"
+num = "0.4"

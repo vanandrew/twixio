@@ -1,10 +1,10 @@
-use nom::{IResult, number};
+use nom::{number, IResult};
 
-fn take_u32(input: &[u8]) -> IResult<&[u8], u32> {
+pub fn take_u32(input: &[u8]) -> IResult<&[u8], u32> {
     number::complete::le_u32(input)
 }
 
-fn take_u64(input: &[u8]) -> IResult<&[u8], u64> {
+pub fn take_u64(input: &[u8]) -> IResult<&[u8], u64> {
     number::complete::le_u64(input)
 }
 
